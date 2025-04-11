@@ -1,49 +1,113 @@
 ---
-import BaseHead from '../components/BaseHead.astro';
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
-import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+import '../styles/global.css';
+import Main from '../layouts/Main.astro';
+import DanielsPhoto from '/public/images/daniels.jpg';
+
+
+// Full Astro Component Syntax:
+// https://docs.astro.build/basics/astro-components/
 ---
 
-<!doctype html>
-<html lang="en">
-	<head>
-		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-	</head>
-	<body>
-		<Header />
-		<main>
-			<h1>🧑‍🚀 Hello, Astronaut!</h1>
-			<p>
-				Welcome to the official <a href="https://astro.build/">Astro</a> blog starter template. This
-				template serves as a lightweight, minimally-styled starting point for anyone looking to build
-				a personal website, blog, or portfolio with Astro.
-			</p>
-			<p>
-				This template comes with a few integrations already configured in your
-				<code>astro.config.mjs</code> file. You can customize your setup with
-				<a href="https://astro.build/integrations">Astro Integrations</a> to add tools like Tailwind,
-				React, or Vue to your project.
-			</p>
-			<p>Here are a few ideas on how to get started with the template:</p>
-			<ul>
-				<li>Edit this page in <code>src/pages/index.astro</code></li>
-				<li>Edit the site header items in <code>src/components/Header.astro</code></li>
-				<li>Add your name to the footer in <code>src/components/Footer.astro</code></li>
-				<li>Check out the included blog posts in <code>src/content/blog/</code></li>
-				<li>Customize the blog post page layout in <code>src/layouts/BlogPost.astro</code></li>
-			</ul>
-			<p>
-				Have fun! If you get stuck, remember to
-				<a href="https://docs.astro.build/">read the docs</a>
-				or <a href="https://astro.build/chat">join us on Discord</a> to ask questions.
-			</p>
-			<p>
-				Looking for a blog template with a bit more personality? Check out
-				<a href="https://github.com/Charca/astro-blog-template">astro-blog-template</a>
-				by <a href="https://twitter.com/Charca">Maxi Ferreira</a>.
-			</p>
-		</main>
-		<Footer />
-	</body>
+	<Main>
+		<section>
+			<div class="flex flex-col sm:flex-row gap-x-0 md:gap-x-8 lg:gap-x-16 pt-4 md:pt-8 lg:pt-16">
+			  <article>
+				<h1 class="mb-1 text-2xl font-semibold tracking-tighter">
+				  Daniel Soliman
+				</h1>
+				<h4 class="mb-4 text-base text-neutral-700">Construction Planner and Front End Engineer</h4>
+				<p class="mb-4">
+					Hi, I’m Daniel, a construction planner and tech enthusiast with 20+ years of experience. I was the scheduler at the Marlins Ballpark, Brickell City Centre, LAX, and other condos, hospitals, and airports throughout Miami. I believe the key to a successful project is understanding priorities and how the plan works in a constantly changing environment.
+				</p>
+				<p class="mb-4">
+				  I'm currently the co-founder of 
+				  <a
+					class="underline"
+					href="https://www.planflow.io"
+					target="_blank"
+					rel="noopener"
+				  >
+					Planflow</a>, a construction operations platform that helps construction teams
+				  execute on schedule, improve productivity, and finish early.
+				</p>
+				<p class="mb-4">
+				  I also work at 
+				  <a
+					class="underline"
+					href="https://www.robinsmorton.com"
+					target="_blank"
+					rel="noopener noreferrer"
+				  >Robins & Morton</a>, an ENR100 healthcare general contractor, managing multiple projects, including <a
+				  class="underline"
+				  href="https://www.robinsmorton.com/robins-morton-receives-project-of-the-year-at-synchro-software-digital-construction-awards/"
+				  target="_blank"
+				  rel="noopener noreferrer"
+				>Project of the year
+				</a>. I developed tools like <a
+					class="underline"
+					href="https://robinsmorton.gitbook.io/timetable-figjam"
+					target="_blank"
+					rel="noopener"
+				  >
+					TimeTable FigJam
+				  </a>, 
+				  <a
+					class="underline"
+					href="https://help.timetable.app/"
+					target="_blank"
+					rel="noopener"
+				  >
+					TimeTable Visio
+				  </a>
+				  , 
+				  <a
+					class="underline"
+					href="https://www.ctrlwiz.com"
+					target="_blank"
+					rel="noopener"
+				  >
+					CtrlWiz
+				  </a>, <a
+				  class="underline"
+				  href="https://www.plusdelta.app"
+				  target="_blank"
+				  rel="noopener"
+				>
+				  PlusDelta
+				</a>, <a
+				  class="underline"
+				  href="https://flypaper.com/slatplanner/"
+				  target="_blank"
+				  rel="noopener"
+				>
+				  SlatPlanner (acquired)</a>. With the time left, I train superintendents on CPM scheduling and administer Primavera Cloud for the company.
+				</p>
+				<p class="mb-4">
+					Previously, I was the Director of BIM and Scheduling at <a
+					class="underline"
+					href="https://bakerconstruction.com/"
+					target="_blank"
+					rel="noopener noreferrer"
+				  >
+					Baker Concrete
+				  </a>, where I started the BIM department and established scheduling standards.
+				</p>
+				<p>I’ve consulted for companies like Tesla, Hunt Construction (now AECOM), Telsa, US Navy, DoD, Turner Construction, Suffolk Construction, Americaribe (Bouygues), and Moriarty Florida.</p>
+				<div class="my-8">
+				  <!-- <BlogPosts /> -->
+				</div>
+			  </article>
+			  <div class="flex flex-col items-center justify-center w-full gap-4 md:gap-8">
+				<figure class="py-0.5 shrink-0">
+				<img
+				  class="rounded-full w-32 h-32 md:w-48 md:h-48"
+				  src={DanielsPhoto.src}
+				  alt="photo of Daniel Soliman"
+				  loading="lazy"
+				/></figure>
+			 <!-- <Button variant={'social'}><a href="/cv_daniel_soliman.pdf" target="_blank">View my CV</a></Button> -->
+			</div>
+			</div>
+		  </section>
+	</Main>
 </html>
