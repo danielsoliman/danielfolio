@@ -1,20 +1,20 @@
-import tailwindcss from "@tailwindcss/vite";
 // @ts-check
 import { defineConfig } from 'astro/config';
 import mdx from '@astrojs/mdx';
 import sitemap from '@astrojs/sitemap';
-
-import tailwindcss from '@tailwindcss/vite';
+import vercel from '@astrojs/vercel';
+import tailwind from '@tailwindcss/vite'; // Use only one Tailwind import
 
 // https://astro.build/config
 export default defineConfig({
-	site: 'https://danny.miami',
-  integrations: [mdx(), sitemap()],
-
+  site: 'https://danny.miami',
+  integrations: [
+    mdx(),
+    sitemap(),
+  ],
   vite: {
-    plugins: [tailwindcss()],
+    plugins: [tailwind()],
   },
-	experimental: {
-		svg: true,
-	},
+  output: 'server',
+  adapter: vercel(),
 });
