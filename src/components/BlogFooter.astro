@@ -1,15 +1,14 @@
 ---
-// import { Button } from "@/components/ui/button";
+import Button from "./starwind/button/Button.astro";
 ---
 
 <div>
   <h4 class="font-semibold text-2xl mb-5">Like what you see?</h4>
-  <div class="grid grid-cols-2 gap-4">
-    <div>
+  <div class="flex flex-wrap gap-4">
+    <div class="grow-span-1">
       <h6 class="font-semibold text-base mb-5">Follow me</h6>
-      <!-- <Button
+      <Button
         variant="social"
-        size={"lg"}
       > <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" fill="white"
       ><path
         d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"
@@ -20,7 +19,7 @@
     </div>
     <div>
       <h6 class="font-semibold text-base mb-5">Share</h6>
-      <div class="flex gap-4">
+      <div class="flex flex-wrap gap-4">
         <Button
           variant="outline"
         >
@@ -54,7 +53,7 @@
               d="M714.163 519.284 1160.89 0h-105.86L667.137 450.887 357.328 0H0l468.492 681.821L0 1226.37h105.866l409.625-476.152 327.181 476.152H1200L714.137 519.284h.026ZM569.165 687.828l-47.468-67.894-377.686-540.24h162.604l304.797 435.991 47.468 67.894 396.2 566.721H892.476L569.165 687.854v-.026Z"
             ></path></svg
             > <a href={"https://www.x.com/intent/tweet?text=" + encodeURIComponent((Astro.props.title ? Astro.props.title + " " : "") + (Astro.site ? new URL(Astro.url.pathname, Astro.site).toString() : Astro.url.pathname))} target="_blank">X / Twitter</a>
-        </Button> -->
+        </Button>
       </div>
     </div>
   </div>

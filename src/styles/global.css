@@ -150,3 +150,7 @@
 		transition-duration: var(--default-transition-duration);
 	}
 }
+
+html {
+	min-width: 360px;
+  }
