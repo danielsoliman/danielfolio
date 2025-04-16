@@ -1,114 +1,141 @@
 ---
-import '../styles/global.css';
-import Main from '../layouts/Main.astro';
-import DanielsPhoto from '/public/images/daniels.jpg';
-import Button from '../components/starwind/button/Button.astro';
-
+import "../styles/global.css";
+import Main from "../layouts/Main.astro";
+import DanielsPhoto from "/public/images/daniels.jpg";
+import Button from "../components/starwind/button/Button.astro";
 
 // Full Astro Component Syntax:
 // https://docs.astro.build/basics/astro-components/
 ---
 
-	<Main>
-		<section>
-			<div class="flex flex-col sm:flex-row gap-x-0 md:gap-x-8 lg:gap-x-16 pt-4 md:pt-8 lg:pt-16">
-			  <article>
+<Main>
+	<section>
+		<div
+			class="flex flex-col sm:flex-row gap-x-0 md:gap-x-8 lg:gap-x-16 pt-4 md:pt-8 lg:pt-16">
+			<article>
 				<h1 class="mb-1 text-2xl font-semibold tracking-tighter">
-				  Daniel Soliman
+					Daniel Soliman
 				</h1>
-				<h4 class="mb-4 text-base text-neutral-700">Construction Planner and Front End Engineer</h4>
+				<h4 class="mb-4 text-base text-neutral-700">
+					Construction Planner and <a
+						href="https://www.indeed.com/career-advice/finding-a-job/front-end-engineer"
+						target="_blank"
+						rel="noopener noreferrer"
+						>Front-End Engineer</a
+					>
+				</h4>
 				<p class="mb-4">
-					Hi, I’m Daniel, a construction planner and tech enthusiast with 20+ years of experience. I was the scheduler at the Marlins Ballpark, Brickell City Centre, LAX, and other condos, hospitals, and airports throughout Miami. I believe the key to a successful project is understanding priorities and how the plan works in a constantly changing environment.
+					Hi, I’m Daniel, a construction planner and tech
+					enthusiast with 20+ years of experience. I was the
+					scheduler at the Marlins Ballpark, Brickell City
+					Centre, LAX, and other condos, hospitals, and airports
+					throughout Miami. I believe the key to a successful
+					project is understanding priorities and how the plan
+					works in a constantly changing environment.
 				</p>
 				<p class="mb-4">
-				  I'm currently the co-founder of 
-				  <a
-					class="underline"
-					href="https://www.planflow.io"
-					target="_blank"
-					rel="noopener"
-				  >
-					Planflow</a>, a construction operations platform that helps construction teams
-				  execute on schedule, improve productivity, and finish early.
+					I'm currently the co-founder of
+					<a
+						class="underline"
+						href="https://www.planflow.io"
+						target="_blank"
+						rel="noopener">
+						Planflow</a
+					>, a construction operations platform that helps
+					construction teams execute on schedule, improve
+					productivity, and finish early.
 				</p>
 				<p class="mb-4">
-				  I also work at 
-				  <a
-					class="underline"
-					href="https://www.robinsmorton.com"
-					target="_blank"
-					rel="noopener noreferrer"
-				  >Robins & Morton</a>, an ENR100 healthcare general contractor, for 8 years as a scheduler for multiple projects, including <a
-				  class="underline"
-				  href="https://www.robinsmorton.com/robins-morton-receives-project-of-the-year-at-synchro-software-digital-construction-awards/"
-				  target="_blank"
-				  rel="noopener noreferrer"
-				>Project of the year
-				</a>. I developed tools like <a
-					class="underline"
-					href="https://robinsmorton.gitbook.io/timetable-figjam"
-					target="_blank"
-					rel="noopener"
-				  >
-					TimeTable FigJam
-				  </a>, 
-				  <a
-					class="underline"
-					href="https://help.timetable.app/"
-					target="_blank"
-					rel="noopener"
-				  >
-					TimeTable Visio
-				  </a>
-				  , 
-				  <a
-					class="underline"
-					href="https://www.ctrlwiz.com"
-					target="_blank"
-					rel="noopener"
-				  >
-					CtrlWiz
-				  </a>, <a
-				  class="underline"
-				  href="https://www.plusdelta.app"
-				  target="_blank"
-				  rel="noopener"
-				>
-				  PlusDelta
-				</a>, <a
-				  class="underline"
-				  href="https://flypaper.com/slatplanner/"
-				  target="_blank"
-				  rel="noopener"
-				>
-				  SlatPlanner (acquired)</a>. With the time left, I train superintendents on CPM scheduling and administer Primavera Cloud for the company.
+					I also work at
+					<a
+						class="underline"
+						href="https://www.robinsmorton.com"
+						target="_blank"
+						rel="noopener noreferrer"
+						>Robins & Morton</a
+					>, an ENR100 healthcare general contractor, for 8 years
+					as a scheduler for multiple projects, including <a
+						class="underline"
+						href="https://www.robinsmorton.com/robins-morton-receives-project-of-the-year-at-synchro-software-digital-construction-awards/"
+						target="_blank"
+						rel="noopener noreferrer"
+						>Project of the year</a
+					>. I developed tools like <a
+						class="underline"
+						href="https://robinsmorton.gitbook.io/timetable-figjam"
+						target="_blank"
+						rel="noopener">
+						TimeTable FigJam
+					</a>,
+					<a
+						class="underline"
+						href="https://help.timetable.app/"
+						target="_blank"
+						rel="noopener">
+						TimeTable Visio
+					</a>
+					,
+					<a
+						class="underline"
+						href="https://www.ctrlwiz.com"
+						target="_blank"
+						rel="noopener">
+						CtrlWiz
+					</a>, <a
+						class="underline"
+						href="https://www.plusdelta.app"
+						target="_blank"
+						rel="noopener">
+						PlusDelta
+					</a>, <a
+						class="underline"
+						href="https://flypaper.com/slatplanner/"
+						target="_blank"
+						rel="noopener">
+						SlatPlanner (acquired)</a
+					>. With the time left, I train superintendents on CPM
+					scheduling and administer Primavera Cloud for the
+					company.
 				</p>
 				<p class="mb-4">
 					Previously, I was the Director of BIM and Scheduling at <a
-					class="underline"
-					href="https://bakerconstruction.com/"
-					target="_blank"
-					rel="noopener noreferrer"
-				  >
-					Baker Concrete
-				  </a>, where I started the BIM department and established scheduling standards.
+						class="underline"
+						href="https://bakerconstruction.com/"
+						target="_blank"
+						rel="noopener noreferrer">
+						Baker Concrete</a
+					>, where I started the BIM department and established
+					scheduling standards.
 				</p>
-				<p>Before that I was a scheduling and BIM consultant. My clients included companies like Tesla, Hunt Construction (now AECOM), US Navy, DoD, Siemens, Turner Construction, Suffolk Construction, Americaribe (Bouygues), and Moriarty Florida.</p>
+				<p>
+					Before that I was a scheduling and BIM consultant. My
+					clients included companies like Tesla, Hunt
+					Construction (now AECOM), US Navy, DoD, Siemens, Turner
+					Construction, Suffolk Construction, Americaribe
+					(Bouygues), and Moriarty Florida.
+				</p>
 				<div class="my-8">
-				  <!-- <BlogPosts /> -->
+					<!-- <BlogPosts /> -->
 				</div>
-			  </article>
-			  <div class="flex flex-col items-center justify-center w-full gap-4 md:gap-8">
+			</article>
+			<div
+				class="flex flex-col items-center justify-center w-full gap-4 md:gap-8">
 				<figure class="py-0.5 shrink-0">
-				<img
-				  class="rounded-full w-32 h-32 md:w-48 md:h-48"
-				  src={DanielsPhoto.src}
-				  alt="photo of Daniel Soliman"
-				  loading="lazy"
-				/></figure>
-			  <Button variant={'social'}><a href="/cv_daniel_soliman.pdf" target="_blank">View my CV</a></Button>
+					<img
+						class="rounded-full w-32 h-32 md:w-48 md:h-48"
+						src={DanielsPhoto.src}
+						alt="photo of Daniel Soliman"
+						loading="lazy"
+					/>
+				</figure>
+				<Button variant={"social"}
+					><a
+						href="/cv_daniel_soliman.pdf"
+						target="_blank"
+						>View my CV</a
+					></Button
+				>
 			</div>
-			</div>
-		  </section>
-	</Main>
-</html>
+		</div>
+	</section>
+</Main>

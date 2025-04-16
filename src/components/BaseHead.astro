@@ -3,7 +3,6 @@
 // all pages through the use of the <BaseHead /> component.
 import '../styles/global.css'
 import { SITE_TITLE } from '../consts';
-import Analytics from '@vercel/analytics/astro';
 
 interface Props {
 	title: string;
@@ -58,4 +57,3 @@ const { title, description, image = '/images/opengraphdaniel.png' } = Astro.prop
 <meta property="twitter:title" content={title} />
 <meta property="twitter:description" content={description} />
 <meta property="twitter:image" content={new URL(image, Astro.url)} />
-<Analytics />
